@@ -1,14 +1,41 @@
-# Master-Thesis
+# Master Thesis - Reward Systems Analysis on EthTrader
 
-Listed below are all the code files used in the realisation of the thesis, with their respective data.
-Almost all of the files have already been run, so you can already see the results. 
-In the event that you would like to run the code again, you can do so by downloading the data (from Gdrive link) and entering them in the file import steps. 
+This repository contains all the code used for the thesis titled **"Exploring Rewards Systems in Online Social Media through Content Analysis Techniques"**. Below is the list of scripts, a brief explanation of their purpose, and the datasets they utilize.
 
+## Project Structure
 
-- file "rewards analysis_Github" (code already runned) --> analysis on correlation and trend over time
-      Data on Google Drive: reddit_distr and reddit_distr\\posts  
-- file "label_analysis_x_GitHub" (code already runned) --> analysis on labels
-      Data on Google Drive:sample_final.xlsx and reddit_distr\\posts 
-- file "feature_extraction_all_data_x_GitHub" --> extraction and creation of features for testing the best model on all posts
-       Data on Google Drive: reddit_distr\\posts, data_pre_reward_x_final_classification and data_post_reward_x_final_classification
-       This code is not runned as a lot of separate files were used for its execution due to the large amount of data and the very long time frame. The aggregated result is shown here.  
+### 1. `rewards analysis_Github.ipynb`
+- **Description**: Analysis on correlation and trend over time.
+- **Data Required (Google Drive link)**:
+  - `reddit_distr` 
+  - `reddit_distr/posts`
+- Already run. Results are included in the notebook.
+
+### 2. `label_analysis_x_GitHub.ipynb`
+- **Description**: Analyses on labels assigned to items by human reviewers.
+- **Data Required (Google Drive link)**:
+  - `sample_final.xlsx` 
+  - `reddit_distr/posts`
+- Already run. Results are included in the notebook.
+
+### 3. `feature_extraction_all_data_x_GitHub.ipynb`
+- **Description**: Extraction and creation of features to test the best model on all posts.
+- **Data Required (Google Drive link)**:
+  - `reddit_distr/posts` 
+  - `data_pre_reward_x_final_classification` 
+  - `data_post_reward_x_final_classification` 
+- Not run. Aggregated results are provided, as the script requires a large amount of data and significant processing time. Therefore, the code execution took place on multiple files.
+
+### 4. `models_x_GitHub.ipynb`
+- **Description**: Applies machine learning models on a sample of Reddit posts, extracts features, performs feature selection, and evaluates models. The best model is used for feature importance and applied to the entire dataset for classification.
+- **Data Required (Google Drive link)**:
+  - `sample_final` 
+  - `reddit_distr/posts` 
+  - `all_1`
+  - `all_2`
+  - `input_data_final`
+  - `sample_x_best_model`
+  - `data_pre_reward_x_final_classification`
+  - `data_post_reward_x_final_classification` 
+- Already run. Results are included in the notebook.
+
